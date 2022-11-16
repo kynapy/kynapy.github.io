@@ -1,4 +1,13 @@
-# kynapy.github.io
+---
+layout: page
+title: About Me
+---
+
+# Hey There!
+
+<img src="images/kynapy.png" width="200px">
+
+
 
 ## Projects
 1. [Software Engineering (Individual Project)](http://kynapy.me/ip/)

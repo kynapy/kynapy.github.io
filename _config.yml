@@ -1,11 +1,5 @@
 title: "Kiyan Ang"
-theme:
 
-header_pages:
 
-markdown: kramdown
 
 github_icon: "images/icon.png"
-
-plugins:
-  - jemoji

@@ -1,8 +1,3 @@
----
-layout: page
-title: About Me
----
-
 # Hey There!
 
 <img src="images/kynapy.png" width="200px">

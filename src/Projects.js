@@ -13,13 +13,18 @@ function Projects() {
     const link3 = "https://ay2223s1-cs2103-f14-4.github.io/tp/";
     const desc3 = "Software engineering group project. BookFace is an application designed for small libraries to keep track of library members and books, and provides a system to track loans of books.";
 
+    const title4 = "This Website!";
+    const link4 = "https://github.com/kynapy/kynapy.github.io";
+    const desc4 = "This is the project I am currently working on. This project focuses on building my portfolio website using React. CSS will be added soon :)";
+
     return (
         <div>
-            <h2>Computer Science Projects</h2>
+            <h2>Personal Projects</h2>
             <ol>
-                <li><Project link={link1} title={title1} description={desc1} /></li>
-                <li><Project link={link2} title={title2} description={desc2} /></li>
+                <li><Project link={link1} title={title1} description={desc1} /></li><br></br>
+                <li><Project link={link2} title={title2} description={desc2} /></li><br></br>
                 <li><Project link={link3} title={title3} description={desc3} /></li><br></br>
+                <li><Project link={link4} title={title4} description={desc4} /></li><br></br>
             </ol>
         </div>
     );

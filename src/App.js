@@ -1,21 +1,25 @@
 import AboutMe from './AboutMe.js';
 import FAQ from './FAQ.js';
 import Projects from './Projects';
-//import './App.css';
+import WorkExperience from './WorkExperience.js';
+import Navbar from './components/Navbar';
+import './App.css';
 
 
 function App() {
   return (
     <div className="App">
-      <nav></nav>
+      <Navbar />
       <header>
         <div>
           <AboutMe /><br></br>
         </div>
       </header>
+      <hr></hr>
       <main>
-        <hr></hr>
         <Projects />
+        <hr></hr>
+        <WorkExperience />
         <hr></hr>
         <FAQ />
       </main>

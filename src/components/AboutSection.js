@@ -1,34 +1,30 @@
-import { HStack, Box, VStack, Heading } from "@chakra-ui/react";
-import FullScreenSection from "./FullScreenSection";
+import { Box, VStack, Heading, Text } from "@chakra-ui/react";
 import image from "../images/kynapy.png";
+import "@fontsource/league-spartan";
 
 const AboutSection = () => {
     return (
-        <FullScreenSection>
-            <HStack width="100%" height="100%" spacing={0}>
-                <VStack
-                    backgroundColor="grey"
-                    height="100%"
-                    width="100%"
-                    spacing={8}
-                    padding="30vh 0"
-                    alignItems="center"
-                >
-                    <Box style={{display:"grid", placeItems: "center"}}>
-                        <Heading>Kiyan Ang</Heading>
-                        <Heading>Junior Software Developer</Heading>
-                        <Heading size="xs"></Heading>
-                        <Heading size="xs">Fresh graduate from the National University of Singapore (NUS), majoring in Life Sciences and a minor in Computer Sciences.
-                        </Heading>
-                        <img
-                            src={ image }
-                            alt="Kiyan"
-                            style={{ borderRadius: "50%", width: "250px" }}
-                        />
-                    </Box>
-                </VStack>
-            </HStack>
-        </FullScreenSection>
+        <VStack
+            backgroundColor="#EAE7DC"
+            height="90vh"
+            width="100%"
+            spacing={8}
+            padding="20vh 0"
+            alignItems="center"
+            color="#8E8D8A"
+        >
+            <Box style={{display:"grid", placeItems: "center", padding:"0px 20vw", rowGap:"1vh"}}>
+                <Heading fontSize={50}>KIYAN ANG</Heading>
+                <Heading fontSize={26}>Junior Software Developer</Heading>
+                <Text align="center" fontFamily="League Spartan" fontSize={22}>Fresh graduate from the National University of Singapore (NUS), majoring in Life Sciences and a minor in Computer Sciences.
+                </Text>
+                <img
+                    src={ image }
+                    alt="Kiyan"
+                    style={{ borderRadius: "50%", width: "250px" }}
+                />
+            </Box>
+        </VStack>
     )
 }
 

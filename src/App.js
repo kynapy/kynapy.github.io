@@ -1,35 +1,19 @@
 import { ChakraProvider } from '@chakra-ui/react';
-
-import AboutMe from './AboutMe.js';
-import FAQ from './FAQ.js';
-import Projects from './Projects';
-import WorkExperience from './WorkExperience.js';
 import Navbar from './components/Navbar';
 import './App.css';
+import ProjectSection from './components/ProjectSection.js';
+import AboutSection from './components/AboutSection.js';
+import "@fontsource/league-spartan";
 
 function App() {
   return (
-    <ChakraProvider>
+    <ChakraProvider resetCSS={true}>
       <div className="App">
-        <Navbar />
-        <header>
-          <div>
-            <AboutMe /><br></br>
-          </div>
-        </header>
-        <hr></hr>
-        <main>
-          <br></br>
-          <Projects />
-          <hr></hr>
-          <br></br>
-          <WorkExperience />
-          <br></br>
-          <hr></hr>
-          <br></br>
-          <FAQ />
-        </main>
-        <footer></footer>
+        <body style={{fontFamily:"League Spartan"}}>
+          <Navbar />
+          <AboutSection />
+          <ProjectSection />
+        </body>
       </div>
     </ChakraProvider>
   );

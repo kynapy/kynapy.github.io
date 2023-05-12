@@ -1,19 +1,40 @@
 import "../css/Navbar.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import Logo from "../images/logo.png"
 
-const Navbar = () => {
+const Navbar = (props) => {
+    const scrollToSection = (elementRef) => {
+        window.scrollTo({
+            top: elementRef.current.offsetTop,
+            behavior: "smooth",
+        });
+    };
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    }
+
     return (
         <nav>
             <ul>
-                <li><img src={ Logo } style={{width: "60px", marginRight: "25px"}} alt="Logo for the website"></img></li>
-                <li><a href="https://www.github.com/kynapy"><FontAwesomeIcon icon={faGithub} size="3x" style={{marginRight: "25px"}}/></a></li>
-                <li><a href="https://www.linkedin.com/in/kiyan-ang"><FontAwesomeIcon icon={faLinkedin} size="3x" style={{marginRight: "25px"}}/></a></li>
-                <li class="navElements">RESUME</li>
-                <li class="navElements">EXPERIENCE</li>
-                <li class="navElements">PROJECTS</li>
-                <li class="navElements">CONTACT ME</li>
+                <li><img
+                        src={ Logo }
+                        style={{width: "60px", marginRight: "25px"}}
+                        alt="Logo for the website"
+                        onClick={ () => scrollToTop() }
+                    >
+                </img></li>
+                <li onClick={ () => scrollToSection(props.experienceRef) }>
+                    EXPERIENCE
+                </li>
+                <li onClick={ () => scrollToSection(props.projectRef) }>
+                    PROJECTS
+                </li>
+                <li onClick={ () => scrollToSection(props.contactRef) }>
+                    CONTACT ME
+                </li>
             </ul>
         </nav>
     )

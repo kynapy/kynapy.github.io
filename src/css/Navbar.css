@@ -1,26 +1,15 @@
 nav {
     background-color: #EAE7DC;
     height: 10vh;
-}
-
-nav ul {
     list-style: none;
-    padding-left: 20px;
-    padding-top: 20px;
+    padding-left: 60px;
+    padding-top: 30px;
     padding-bottom: 20px;
 }
 
 li {
     display: inline-block;
-    text-decoration: none;
     vertical-align: middle;
-}
-
-.navElements {
-    outline: 1px solid;
-    margin-top: 1px;
-    margin-left: 1px;
-    padding: 6px 4px 4px 4px;
-    font-size: 18px;
-    color: #8E8D8A;
+    padding: 0 8px 8px 8px;
+    font-size: 16px;
 }

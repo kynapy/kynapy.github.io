@@ -18,7 +18,7 @@ function App() {
   return (
     <ChakraProvider resetCSS={true}>
       <div className="App" style={{fontFamily:"League Spartan"}}>
-        <Navbar projectRef={projectSection} />
+        <Navbar projectRef={projectSection} contactRef={contactSection}/>
         <AboutSection className="about"/>
         <ExperienceSection ref={experienceSection}/>
         <ProjectSection ref={projectSection} className="projectSection"/>

@@ -1,0 +1,11 @@
+.inputFields {
+    max-height:"100px";
+    width: 90%;
+    margin-bottom: 20px;
+
+}
+
+label {
+    position:relative;
+    align-self: left;
+}

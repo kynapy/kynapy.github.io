@@ -17,7 +17,7 @@ const AboutSection = () => {
             <Box style={{display:"grid", placeItems: "center", padding:"0px 26vw", rowGap:"1vh"}}>
                 <Heading fontSize={50}>KIYAN ANG</Heading>
                 <Heading fontSize={24}>Software Engineer</Heading>
-                <Text align="center" fontSize={22}>Fresh graduate from the National University of Singapore (NUS), with a major in Life Sciences and a minor in Computer Sciences.
+                <Text align="center" fontSize={18}>Fresh graduate from the National University of Singapore (NUS), with a major in Life Sciences and a minor in Computer Sciences.
                 </Text>
                 <img
                     src={ image }

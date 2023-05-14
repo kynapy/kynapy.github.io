@@ -9,3 +9,7 @@ label {
     position:relative;
     align-self: left;
 }
+
+textarea {
+    resize: none;
+}

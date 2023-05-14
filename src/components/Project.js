@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { VStack } from "@chakra-ui/react";
+import "../css/Project.css";
 
 const Project = (props) => {
     return (

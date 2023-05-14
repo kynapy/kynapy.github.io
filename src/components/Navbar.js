@@ -26,9 +26,6 @@ const Navbar = (props) => {
                         onClick={ () => scrollToTop() }
                     >
                 </img></li>
-                <li onClick={ () => scrollToSection(props.experienceRef) }>
-                    EXPERIENCE
-                </li>
                 <li onClick={ () => scrollToSection(props.projectRef) }>
                     PROJECTS
                 </li>

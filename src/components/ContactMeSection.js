@@ -80,6 +80,10 @@ const ContactMeSection = (props, ref) => {
                         name="message"
                         value={ message }
                         onChange={ (e) => setMessage(e.target.value) }
+                        style={{
+                            resize: "none",
+                            height: "130px",
+                        }}
                     ></textarea>
                     <input
                         type="submit"

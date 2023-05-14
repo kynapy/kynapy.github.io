@@ -24,7 +24,6 @@ function App() {
           experienceRef={ experienceSection }
         />
         <AboutSection className="about" />
-        <ExperienceSection ref={ experienceSection } />
         <ProjectSection ref={ projectSection } className="projectSection" />
         <ContactMeSection ref={ contactSection } />
         <Footer />

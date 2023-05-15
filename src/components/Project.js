@@ -5,13 +5,10 @@ import "../css/Project.css";
 
 const Project = (props) => {
     return (
-        <article style={{
-            backgroundColor: "#D8C3A5",
-            borderRadius: 8,
-            textAlign: "center",
-            maxWidth: "500px",
-        }}>
-            <VStack style={{padding: "20px 30px"}}>
+        <article style={{maxWidth: "80%"}}>
+            <VStack style={{
+                padding: "20px 30px",
+            }}>
                 <h1 style={{fontSize: "30px"}}>{ props.title }</h1>
                 <p>{ props.description }</p>
                 <a href={ props.link }><FontAwesomeIcon icon={ faGithub } size="2x" /></a>

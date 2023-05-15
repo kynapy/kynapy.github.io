@@ -1,3 +1,10 @@
 article:hover {
-    background-color: pink;
+    background-color: #C8B395;
+    cursor: pointer;
+}
+
+article {
+    background-color: #D8C3A5;
+    border-radius: 8px;
+    text-align: center;
 }

@@ -2,6 +2,7 @@
     max-height:"100px";
     width: 90%;
     margin-bottom: 20px;
+    padding: 5px;
 }
 
 .contactSection {
@@ -31,7 +32,7 @@ label {
 
 textarea {
     min-height: 130px;
-    max-height: 150px;
+    max-height: 180px;
     height: 130px;
 }
 

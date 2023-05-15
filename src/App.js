@@ -1,4 +1,4 @@
-import { ChakraProvider } from '@chakra-ui/react';
+import { ChakraProvider, useMediaQuery } from '@chakra-ui/react';
 import './App.css';
 import "@fontsource/league-spartan";
 
@@ -13,6 +13,7 @@ function App() {
   const projectSection = useRef(null);
   const experienceSection = useRef(null);
   const contactSection = useRef(null);
+  const [isMobile] = useMediaQuery("(max-width: 768px)");
 
   return (
     <ChakraProvider resetCSS={true}>
@@ -22,8 +23,8 @@ function App() {
           contactRef={ contactSection }
           experienceRef={ experienceSection }
         />
-        <AboutSection className="about" />
-        <ProjectSection ref={ projectSection } className="projectSection" />
+        <AboutSection className="about" isMobile={ isMobile } />
+        <ProjectSection ref={ projectSection } className="projectSection" isMobile={ isMobile }/>
         <ContactMeSection ref={ contactSection } />
         <Footer />
       </div>

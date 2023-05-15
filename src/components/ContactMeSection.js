@@ -13,12 +13,12 @@ const ContactMeSection = (props, ref) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        /*emailjs.sendForm("service_habd5fn", "template_2j8gymr", form.current, "BUpVd_VfIJl4Rn1Xm")
+        emailjs.sendForm("service_habd5fn", "template_2j8gymr", form.current, "BUpVd_VfIJl4Rn1Xm")
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
                 console.log(error.text)
-            });*/
+            });
         setFormSubmitted(true);
         setName("");
         setEmail("");

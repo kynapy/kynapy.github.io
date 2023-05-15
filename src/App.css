@@ -1,16 +1,6 @@
-header {
-    display: "flex";
-    justify-content: "center";
-    align-items: "center";
-}
-
-main {
-    display: "flex";
-    justify-content: "center";
-    align-items: "center";
-}
-
 .App {
     font-family: "League Spartan";
     background-color: #EAE7DC;
+    width: 100vw;
+    max-width: 100%;
 }

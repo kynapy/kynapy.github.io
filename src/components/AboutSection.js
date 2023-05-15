@@ -4,15 +4,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import "../css/AboutSection.css"
 
-const AboutSection = () => {
+const AboutSection = (props) => {
     return (
         <VStack
             height="90vh"
+            minHeight="90vh"
             width="100%"
             spacing="1vh"
-            padding="13vh 28vw"
+            padding={props.isMobile ? "4vh 28vw 0 28vw" : "13vh 28vw 0 28vw"}
             alignItems="center"
             color="#8E8D8A"
+            textAlign="center"
         >
             <Heading fontSize={50}>KIYAN ANG</Heading>
             <Heading fontSize={24}>Software Engineer</Heading>

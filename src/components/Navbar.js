@@ -21,7 +21,7 @@ const Navbar = (props) => {
             <ul>
                 <li><img
                         src={ Logo }
-                        style={{width: "60px", marginRight: "25px"}}
+                        className="kiyanLogo"
                         alt="Logo for the website"
                         onClick={ () => scrollToTop() }
                     >

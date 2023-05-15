@@ -4,7 +4,7 @@ import Project from "./Project";
 
 const ProjectSection = (props, ref) => {
     return (
-        <VStack ref={ref} style={{backgroundColor:"#EAE7DC", color: "black", padding: "5vh 0"}} spacing={10}>
+        <VStack ref={ref} style={{color: "black", padding: "5vh 0"}} spacing={10}>
             <Heading>PROJECTS</Heading>
             <VStack spacing={8}>
                 <HStack padding="0 10vw" spacing={10}>

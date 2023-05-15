@@ -8,7 +8,6 @@ import ProjectSection from './components/ProjectSection.js';
 import Footer from './components/Footer';
 import { useRef } from 'react';
 import ContactMeSection from './components/ContactMeSection';
-import ExperienceSection from './components/ExperienceSection';
 
 function App() {
   const projectSection = useRef(null);
@@ -17,7 +16,7 @@ function App() {
 
   return (
     <ChakraProvider resetCSS={true}>
-      <div className="App" style={{fontFamily:"League Spartan"}}>
+      <div className="App" >
         <Navbar
           projectRef={ projectSection }
           contactRef={ contactSection }

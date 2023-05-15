@@ -6,7 +6,6 @@ const ExperienceSection = (props, ref) => {
         <VStack
             ref={ref}
             style={{
-                backgroundColor: "#EAE7DC",
                 minHeight: "90vh",
                 maxHeight: "40vh",
                 maxWidth: "100%",

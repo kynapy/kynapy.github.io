@@ -26,34 +26,16 @@ const ContactMeSection = (props, ref) => {
     return (
         <VStack
             ref={ref}
-            style={{
-                backgroundColor: "#EAE7DC",
-                minHeight: "90vh",
-                maxHeight: "40vh",
-                maxWidth: "100%",
-                padding: "2vh 0"
-            }}
+            className="contactSection"
+            spacing={5}
         >
             <Heading>Get In Touch</Heading>
-            <Text
-                style={{marginTop: "20px", maxWidth: "50%", textAlign: "center"}}
-            >
+            <Text id="formDescription">
                 Do feel free to give me any feedback or comments on this website, as I happily welcome ways to improve my code.
                 Do also drop any questions and I would get back to you!
             </Text>
-            <div style={{
-                margin: "20px",
-                maxHeight: "50%",
-            }}>
+            <div>
                 <form
-                    style={{
-                        display: "grid",
-                        rowGap:"5px",
-                        textAlign: "center",
-                        placeItems: "center",
-                        minWidth: "400px",
-                        maxHeight: "50%",
-                    }}
                     onSubmit={handleSubmit}
                     ref={ form }
                 >
@@ -80,18 +62,11 @@ const ContactMeSection = (props, ref) => {
                         name="message"
                         value={ message }
                         onChange={ (e) => setMessage(e.target.value) }
-                        style={{
-                            resize: "none",
-                            height: "130px",
-                        }}
+                        required
                     ></textarea>
                     <input
                         type="submit"
-                        style={{
-                            borderRadius: 6,
-                            padding: "5px 5px 1px 5px",
-                            backgroundColor: "#D8C3A5",
-                        }}
+                        className="submitButton"
                     />
                 </form>
             </div>

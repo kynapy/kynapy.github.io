@@ -2,7 +2,26 @@
     max-height:"100px";
     width: 90%;
     margin-bottom: 20px;
+}
 
+.contactSection {
+    min-height: 90vh;
+    max-width: 100%;
+    padding: 2vh 0;
+}
+
+#formDescription {
+    max-width: 50%;
+    text-align: center;
+}
+
+form {
+    display: grid;
+    row-gap: 5px;
+    text-align: center;
+    place-items: center;
+    min-width: 400px;
+    max-height: 50%;
 }
 
 label {
@@ -11,5 +30,17 @@ label {
 }
 
 textarea {
-    resize: none;
+    min-height: 130px;
+    max-height: 150px;
+    height: 130px;
+}
+
+.submitButton {
+    border-radius: 8px;
+    padding: 5px 5px 1px 5px;
+    background-color: #D8C3A5;
+}
+
+.submitButton:hover {
+    cursor: pointer;
 }

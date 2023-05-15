@@ -2,22 +2,24 @@ import { VStack, Heading, Text } from "@chakra-ui/react";
 import React, { useRef, useState } from "react";
 import "../css/ContactMeSection.css";
 import emailjs from "@emailjs/browser";
+import FormSubmitResponse from "./FormSubmitResponse";
 
 const ContactMeSection = (props, ref) => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
+    const [formSubmitted, setFormSubmitted] = useState(false);
     const form = useRef(null);
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        emailjs.sendForm("service_habd5fn", "template_2j8gymr", form.current, "BUpVd_VfIJl4Rn1Xm")
+        /*emailjs.sendForm("service_habd5fn", "template_2j8gymr", form.current, "BUpVd_VfIJl4Rn1Xm")
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
                 console.log(error.text)
-            });
-        alert("Your message has been sent. Thank you!");
+            });*/
+        setFormSubmitted(true);
         setName("");
         setEmail("");
         setMessage("");
@@ -70,6 +72,10 @@ const ContactMeSection = (props, ref) => {
                     />
                 </form>
             </div>
+            <FormSubmitResponse trigger={formSubmitted} setTrigger={setFormSubmitted}>
+                <Heading>Success!</Heading>
+                <Text>Thank you, your message has been sent and I will get back to you shortly!</Text>
+            </FormSubmitResponse>
         </VStack>
     )
 }

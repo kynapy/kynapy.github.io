@@ -1,5 +1,15 @@
-#kiyanImage {
+#image-cropper {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
     border-radius: 50%;
-    width: 250px;
-    padding: 20px 0;
+    margin: 20px 0;
+}
+
+#kiyan-image {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
 }

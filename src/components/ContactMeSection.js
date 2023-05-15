@@ -73,7 +73,7 @@ const ContactMeSection = (props, ref) => {
                 </form>
             </div>
             <FormSubmitResponse trigger={formSubmitted} setTrigger={setFormSubmitted}>
-                <Heading>Success!</Heading>
+                <Heading style={{paddingBottom: "20px"}}>Success!</Heading>
                 <Text>Thank you, your message has been sent and I will get back to you shortly!</Text>
             </FormSubmitResponse>
         </VStack>

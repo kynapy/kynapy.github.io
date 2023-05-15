@@ -1,13 +1,15 @@
-#formSuccess {
+#form-success {
     display: flex;
     justify-content: center;
     align-items: center;
 
     position: fixed;
-    top: 20px;
+    top: 30px;
     align-self: center;
     background-color: #D8C3A5;
     border-radius: 8px;
+    max-width: 80vw;
+    text-align: center;
 }
 
 .popup-inner {

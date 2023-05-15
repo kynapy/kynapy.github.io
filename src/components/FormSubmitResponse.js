@@ -3,7 +3,7 @@ import "../css/FormSubmitResponse.css";
 
 const FormSubmitResponse = (props) => {
     return props.trigger ? (
-        <div id="formSuccess">
+        <div id="form-success">
             <div className="popup-inner">
                 <button
                     className="close-button"

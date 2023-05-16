@@ -30,6 +30,7 @@ const ContactMeSection = (props, ref) => {
             ref={ref}
             className="contactSection"
             spacing={5}
+            data-aos="fade-up"
         >
             <Heading>Get In Touch</Heading>
             <Text id="formDescription">

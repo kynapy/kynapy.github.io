@@ -4,7 +4,12 @@ import Project from "./Project";
 
 const ProjectSection = (props, ref) => {
     return (
-        <VStack ref={ref} style={{color: "black", padding: "5vh 0vw", minHeight: "100vh", width: "100%", maxWidth: "100%"}} spacing={10}>
+        <VStack
+            ref={ref}
+            style={{color: "black", padding: "5vh 0vw", minHeight: "100vh", width: "100%", maxWidth: "100%"}}
+            spacing={10}
+            data-aos="fade-up"
+        >
             <Heading>PROJECTS</Heading>
             <VStack spacing={8}>
                 { props.isMobile ? <MobileProjectSection /> : <DesktopProjectSection />}

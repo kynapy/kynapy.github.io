@@ -1,7 +1,5 @@
 const Experience = () => {
-    return (
-        <></>
-    )
-}
+    return <></>;
+};
 
 export default Experience;
